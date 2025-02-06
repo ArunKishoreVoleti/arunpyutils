@@ -64,3 +64,11 @@ class Pyutils:
         except Exception as e:
             raise(e)   
     
+    # A method to calculate factorial
+    def factorial(self, number):
+        try:
+            if number == 0:
+                return 1
+            return number * self.factorial(number - 1)
+        except Exception as e:
+            raise(e)
