@@ -72,3 +72,10 @@ class Pyutils:
             return number * self.factorial(number - 1)
         except Exception as e:
             raise(e)
+        
+    # A method to reverse a string
+    def reverse_string(self, string):
+        try:
+            return string[::-1]
+        except Exception as e:
+            raise(e)
